@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* -----FONT STYLES----- */
+
+body {
+  font-family: 'SF UI Text', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+h1 {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 110%;
+}
+
+h1 ~ .subtitle {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 140%;
+}
+
+h2 {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+h3 {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+}
+
+a.button {
+  font-family: 'SF UI Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+/* "RUST" langage indicator in code segment */
+#langage {
+  font-family: 'SF UI Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+a.see-more {
+  font-family: 'SF UI Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
