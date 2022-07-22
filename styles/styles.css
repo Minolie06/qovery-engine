@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* -----FONT STYLES----- */
+/* -----GENERAL + FONT STYLES----- */
 
 body {
   font-family: 'SF UI Text', Helvetica, Arial, sans-serif;
@@ -61,6 +61,7 @@ a.button {
   line-height: 150%;
 }
 
+/* SEE MORE links */
 a.see-more {
   font-family: 'SF UI Text';
   font-style: normal;
@@ -68,4 +69,45 @@ a.see-more {
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
+}
+
+/* -----HEADER----- */
+
+header {
+  min-height: 926px;
+  background-color: #151B2B;
+  color: white;
+}
+
+header .logo {
+  height: 100px;
+  border: 1px solid red;
+}
+
+header .jumbotron {
+  border: 1px solid green;
+}
+
+header .jumbotron .jumbotron-item.text {
+  border: 1px solid lightblue;
+  min-height: 200px;
+}
+
+header .jumbotron .jumbotron-item.picture {
+  border: 1px solid coral;
+  min-height: 300px;
+}
+
+/* -----MAIN----- */
+
+main {
+  background-color: #F9F9FD;
+  min-height: 500px;
+}
+
+/* -----FOOTER----- */
+
+footer {
+  background-color: #151B2B;
+  min-height: 175px;
 }
