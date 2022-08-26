@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  color: #454658;
 }
 
 h1 {
@@ -53,13 +54,46 @@ a.button {
 }
 
 /* "RUST" langage indicator in code segment */
-#langage {
+.langage-name {
   font-family: 'SF UI Text';
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.code-segment pre {
+  font-family: 'Hack';
+  font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 150%;
+  background-color: white;
+  color: #454658;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
 }
+
+.code-segment pre .method {
+  color: #FF6240;
+}
+.code-segment pre .function {
+  color: #43C9D5;
+}
+.code-segment pre .keyword {
+  color: #5D64D2;
+}
+.code-segment pre .string {
+  color: #4548B0;
+}
+.code-segment pre .comment {
+  color: #A8A8C1;
+}
+.code-segment pre .symbol {
+  color: #B160F0;
+}
+
 
 /* SEE MORE links */
 a.see-more {
