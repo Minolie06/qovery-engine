@@ -156,6 +156,10 @@ header .jumbotron .jumbotron-item.text .subtitle {
   color: white;
 }
 
+header .jumbotron .jumbotron-item.picture .desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
 
   header {
@@ -170,12 +174,104 @@ header .jumbotron .jumbotron-item.text .subtitle {
   header {
     max-width: 1045px;
     text-align: left;
+    min-height: 925px;
   }
-
+  
   header .jumbotron {
-    flex-direction: row;
+    position: relative;
+    display: block;
+    --jumb-margin: 520px;
+    --jumb-time: 4000ms;
   }
 
+  header .jumbotron .jumbotron-item.text {
+    max-width: 500px;
+    position: absolute;
+    animation: jumbotron-text var(--jumb-time);
+    top: 100px;
+  }
+  
+  header .jumbotron .jumbotron-item.picture .desktop {
+    display: block;
+    position: absolute;
+    left: var(--jumb-margin);
+  }
+
+  header .jumbotron .jumbotron-item.picture .mobile {
+    display: none;
+  }
+
+  #jumbotron_dashes {
+    left: calc(var(--jumb-margin) + 130px);
+  }
+  
+  #jumbotron_qovery {
+    top: 0;
+    animation: jumbotron_qovery var(--jumb-time);
+  }
+  
+  #jumbotron_kubernetes {
+    top: 200px;
+    animation: jumbotron_kubernetes var(--jumb-time);
+
+  }
+  
+  #jumbortron_cloud {
+    top: 400px;
+    animation: jumbortron_cloud var(--jumb-time);
+
+  }
+}
+
+@keyframes jumbotron-text{
+  0% {
+    top: -1000px;
+  }
+  
+  50% {
+    top: 400px;
+  }
+}
+
+@keyframes jumbotron_qovery{
+  0% {
+    top: 200px;
+  }
+
+  50% {
+    top: 0;
+  }
+ 
+}
+
+@keyframes jumbotron_kubernetes{
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+ 
+}
+
+@keyframes jumbortron_cloud{
+
+  0% {
+    opacity: 0;
+    top: 200px;
+  }
+
+  50% {
+    opacity: 0;
+    top: 200px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 400px;
+  }
+ 
 }
 
 /* -----MAIN----- */
